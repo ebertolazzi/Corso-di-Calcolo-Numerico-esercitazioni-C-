@@ -1,8 +1,0 @@
-# gnuplot script
-
-set terminal pdf size 8, 5 font "Helvetica, 16"
-set output "fit_degree_3.pdf"
-#set output "fit_degree_2.pdf"
-
-plot    "pol_fit.txt" index 0 title "original data" with points pointtype 3, \
-        "pol_fit.txt" index 1 title "fitted data" with linespoints pointtype 8
