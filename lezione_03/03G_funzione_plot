@@ -1,0 +1,14 @@
+# ----------------------------------------------------- #
+# 	script gnuplot che plotta una serie di dati
+# ----------------------------------------------------- #
+
+# produce in output un PDF, la dimensinoe e` in inch
+set terminal pdf size 8, 5 font "Helvetica,10"
+
+# assegna il nome del file di output
+set output "funzione.pdf"
+
+set xzeroaxis linetype 3 linewidth 1 linecolor "grey"
+set yzeroaxis linetype 3 linewidth 1 linecolor "grey"
+
+plot "funzione.txt" title 'La funzione' with lines linetype 6 linewidth 2 linecolor "sea-green"

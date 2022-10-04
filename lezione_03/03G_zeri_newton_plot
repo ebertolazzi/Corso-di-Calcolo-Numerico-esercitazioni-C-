@@ -1,0 +1,13 @@
+# ----------------------------------------------------- #
+# 	script gnuplot che plotta due serie di dati che
+#	condividono una stessa X	
+# ----------------------------------------------------- #
+
+# produce in output un PDF, la dimensinoe e` in inch
+set terminal pdf size 8, 5 font "Helvetica,10"
+
+# assegna il nome del file di output
+set output "newton.pdf"
+
+plot	"newton.txt" using 1 title "X0" with linespoints pointtype 3, \
+		"newton.txt" using 2 title "epsilon" with linespoints pointtype 8
