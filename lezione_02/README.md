@@ -1,6 +1,6 @@
 # Lezione 02
 
-- Classi, template
+- Classi
+- Template
 - I/O da file
 - Introduzione a gnuplot
-- Introduzione a Eigen
