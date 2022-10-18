@@ -1,6 +1,6 @@
 # gnuplot script
 
-set terminal pdf size 8, 5 font "Helvetiva,16"
+set terminal pdf size 8, 5 font "Helvetica,16"
 set output "output1.pdf"
 
 plot "output1.txt" title 'My Data' with linespoints pointtype "O" linecolor "sea-green"
