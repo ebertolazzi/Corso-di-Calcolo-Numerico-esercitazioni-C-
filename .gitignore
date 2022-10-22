@@ -5,3 +5,6 @@ cnum_examples/build
 *.dSYM
 *.o
 */bin
+
+*.pdf
+*.txt
