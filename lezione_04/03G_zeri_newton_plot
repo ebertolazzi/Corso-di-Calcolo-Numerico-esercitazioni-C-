@@ -10,4 +10,4 @@ set terminal pdf size 8, 5 font "Helvetica,10"
 set output "newton.pdf"
 
 plot	"newton.txt" using 1 title "X0" with linespoints pointtype 3, \
-		"newton.txt" using 2 title "epsilon" with linespoints pointtype 8
+		  "newton.txt" using 2 title "epsilon" with linespoints pointtype 8
