@@ -1,4 +1,5 @@
-# Lezione 05 (DS: 31/10/2022 - DS: 01/11/2022)
+# Lezione 05 (DS: 24/10/2022 - DS: 25/10/2022)
 
-- Interpolazione polinomiale
-- Utilizzo della libreria per i polinomi
+- Zeri di funzione: metodo di Newton (con visualizzazione su gnuplot)
+- Zeri di funzione: metodo delle Secanti (con visualizzazione su gnuplot)
+- Zeri di funzione con libreria cnum e velocità di convergenza
