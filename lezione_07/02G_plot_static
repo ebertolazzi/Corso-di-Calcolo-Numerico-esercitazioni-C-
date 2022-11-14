@@ -1,0 +1,15 @@
+# gnuplot scritp
+
+# setup dell'output
+set terminal pdf size 8, 5 font "Helvetica, 12"
+set output "plot.pdf"
+
+# segna l'asse X alla posizione y=0
+set xzeroaxis
+
+# impostare 'linetype' con un numero equivale a settare il colore,
+# per conoscere i colori disponibili basta lanciare gnuplot ed eseguire il comando "test"
+
+# 'impulses' produce una linea verticale fino al valore y indicato
+plot	"plot_data.txt" index 0 title "f(x)" with lines linetype 6 linewidth 2, \
+    	"plot_data.txt" index 1 title "intervals" with impulses linetype 7
