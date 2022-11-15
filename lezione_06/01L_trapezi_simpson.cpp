@@ -45,8 +45,8 @@ float simpson( VectorXf &x, VectorXf &y ) {
 	int	n	= x.size() / 2;
 	
 	for( int i = 1; i < n; i++ ) {
-		h	= ( x( 2 * i ) - x( 2 * i - 2 ) );
-		s	+= h * ( y( 2 * i - 2 ) + 4 * y( 2 * i - 1 ) + y( 2 * i ) );
+		h	= ( x[ 2 * i ] - x[ 2 * i - 2 ] );
+		s	+= h * ( y[ 2 * i - 2 ] + 4 * y[ 2 * i - 1 ] + y[ 2 * i ] );
 	}
 	return s / 6;
 }
@@ -70,8 +70,8 @@ void data_gen( VectorXf &x, VectorXf &y, int n_data ) {
 
 	// la funzione (inventata a caso)
 	for( int i=0; i<n_data; i++ ) {
-		v		= x( i );
-		y( i )	= 3 + v * v * sin( v ) - 2. * v * sin( 2 * v );
+		v		= x[ i ];
+		y[ i ]	= 3 + v * v * sin( v ) - 2. * v * sin( 2 * v );
 	}
 }
 
@@ -92,4 +92,6 @@ int main() {
 	// il risultato dovrebbe essere 25.1327
 	cout << "Metodo trapezi usando " << N << " intervalli:\t" << rt << endl;
 	cout << "Metodo Simpson usando " << N << " intervalli:\t" << rs << endl;
+
+	return 0;
 }
