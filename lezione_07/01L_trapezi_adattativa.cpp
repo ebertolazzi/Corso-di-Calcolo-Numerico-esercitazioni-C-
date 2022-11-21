@@ -13,7 +13,7 @@ using namespace std;
 #define         PREC        4
 #define         MAX_ITER    10000
 #define         N_POINTS    100
-#define         ANIM        0           // genera plot 1=animato o 0=statico
+#define         ANIM        1           // genera plot 1=animato o 0=statico
 
 int	            n_iter      = 0;        // counter per il numero di iterazioni eseguite
 const string    head        = "# --------------------------\n# data generated for gnuplot\n# --------------------------\n";
@@ -70,7 +70,7 @@ float adapt( float a, float b, float ( *f )( float x ), float e, ofstream &o ) {
     }
 
     if ( ANIM ) {
-        o << "\n\n";                    // due righe vuote in gnuplot separano set di dati
+        o << "\n\n";                    // due righe vuote in gnuplot separano i data block
     }
     o << m << "\t" << f( m ) << endl;   // scrive il nuovo intervallo nel file per il plot
 
@@ -98,7 +98,7 @@ float do_adapt( float a, float b, float ( *f )( float x ), float e ) {
         o << x << "\t" << f( x ) << endl;
         x	+= dx;
     }
-    o << "\n\n";                // due righe vuote in gnuplot separano set di dati
+    o << "\n\n";                // due righe vuote in gnuplot separano i data block
 
     // scrive i due estremi dell'intervallo complessivo
     o << a << "\t" << f( a ) << endl;

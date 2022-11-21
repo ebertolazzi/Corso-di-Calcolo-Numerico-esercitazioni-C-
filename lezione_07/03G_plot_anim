@@ -7,12 +7,12 @@ set output "plot.gif"
 # segna l'asse X alla posizione y=0
 set xzeroaxis
 
-# estrae una statistica preventiva dai dataset di un file,
-# qui serve solo per sapere quanti 'dataset' ci sono
+# estrae una statistica preventiva dai 'data block' di un file,
+# qui serve solo per sapere quanti 'data block' ci sono
 # (ovvero quanti sono i passi eseguiti dall'algoritmo ricorsivo)
 stats "plot_anim.txt" nooutput
 
-# il primo 'dataset' corrisponde alla funzione
+# il primo 'data block' corrisponde alla funzione
 # tutti i successivi sono i punti che fanno da intervallo per il metodo adattativo
 # questi vengono plottati in un loop
 do for [ i = 1:int( STATS_blocks ) ] {
