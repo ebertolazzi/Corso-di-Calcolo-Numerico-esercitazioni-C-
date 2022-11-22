@@ -10,10 +10,10 @@
  
 using namespace std;
 
-#define         PREC        4
-#define         MAX_ITER    10000
-#define         N_POINTS    100
 #define         ANIM        1           // genera plot 1=animato o 0=statico
+
+#define         MAX_ITER    1000
+#define         N_POINTS    100
 
 int	            n_iter      = 0;        // counter per il numero di iterazioni eseguite
 const string    head        = "# --------------------------\n# data generated for gnuplot\n# --------------------------\n";
@@ -52,9 +52,9 @@ float midpoint( float a, float b, float ( *f )( float x ) ) {
         b:  estremo finale dell'intervallo di integrazione
         f:  funzione da integrare
         e:  massimo errore concesso
+        o:  stream di output su file
 \*-----------------------------------------------------------------------------------*/
 float adapt( float a, float b, float ( *f )( float x ), float e, ofstream &o ) {
-    n_iter++;
     float   i1  = midpoint( a, b, f );
     float   i2  = trapez( a, b, f );
     float   m   = ( b + a ) / 2.;
@@ -74,6 +74,7 @@ float adapt( float a, float b, float ( *f )( float x ), float e, ofstream &o ) {
     }
     o << m << "\t" << f( m ) << endl;   // scrive il nuovo intervallo nel file per il plot
 
+    n_iter++;
     // esegue le chiamate ricorsive
     i1	= adapt( a, m, f, e / 2., o );
     i2	= adapt( m, b, f, e / 2., o );
@@ -91,7 +92,6 @@ float do_adapt( float a, float b, float ( *f )( float x ), float e ) {
 
     ofstream	o( fname );     // stream di uscita
     o << head;                  // scrive la header
-    o.precision( PREC );        // imposta la precisione
 
     // scrive prima i dati della funzione da integrare
     for( float x=a; x<b; ){
