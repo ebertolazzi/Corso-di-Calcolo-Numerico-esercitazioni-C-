@@ -6,5 +6,6 @@ cnum_examples/build
 *.o
 */bin
 
+*.gif
 *.pdf
 *.txt

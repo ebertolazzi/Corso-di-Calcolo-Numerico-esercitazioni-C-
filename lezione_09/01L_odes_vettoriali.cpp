@@ -13,12 +13,9 @@
 typedef double real;
 typedef int    integer;
 
-typedef Eigen::Matrix<real, 2, 1>  vec2; // 2x1 vector type (column vector)
-typedef Eigen::Matrix<real, 2, 2>  mat2; // 2x2 matrix type
-typedef Eigen::Matrix<real, 3, 1>  vec3; // 3x1 vector type (column vector)
-typedef Eigen::Matrix<real, 3, 3>  mat3; // 3x3 matrix type
-typedef Eigen::Matrix<real, 4, 1>  vec4; // 4x1 vector type (column vector)
-typedef Eigen::Matrix<real, 4, 4>  mat4; // 4x4 matrix type
+typedef Eigen::Matrix<real, 2, 1> vec2; // 2x1 vector type (column vector)
+typedef Eigen::Matrix<real, 3, 1> vec3; // 3x1 vector type (column vector)
+typedef Eigen::Matrix<real, 4, 1> vec4; // 4x1 vector type (column vector)
 
 const std::string head  = "# --------------------------\n# data generated for gnuplot\n# --------------------------\n";
 const std::string	fname = "plot_data";
