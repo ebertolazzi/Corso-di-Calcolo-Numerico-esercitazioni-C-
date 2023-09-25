@@ -5,10 +5,10 @@
             "label": "BUILD",
             "command": "g++",
             "args": [
-                "-I${fileDirname}/../cnum_examples/include",
-                "-I${fileDirname}/../cnum_examples/eigen3",
+                "-I${fileDirname}\\..\\cnum_examples\\include",
+                "-I${fileDirname}\\..\\cnum_examples\\eigen3",
                 "${file}",
-                "${fileDirname}/../cnum_examples/src/*.cpp",
+                "${fileDirname}\\..\\cnum_examples\\src\\*.cpp",
                 "-g",
                 "-pedantic",
                 "-Wall",

@@ -9,7 +9,7 @@
                 "-I${fileDirname}/../cnum_examples/eigen3",
                 "-g",
                 "${file}",
-                "${fileDirname}/../cnum_examples/src/*.cpp",
+                "'${fileDirname}'/../cnum_examples/src/*.cpp",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
