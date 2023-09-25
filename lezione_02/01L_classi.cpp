@@ -1,5 +1,5 @@
 /* --------------------------------------------------------------------------------- *\
-    CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2022/23)                  Alice Plebe
+    CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2023/24)                  Alice Plebe
 
     Classi e oggetti
 \* --------------------------------------------------------------------------------- */
@@ -28,7 +28,7 @@ class Wallet {
 class SafeWallet {
     private:
         // stavolta l'attributo e` privato, quindi non accessibile/modificale al di fuori della classe
-        double  money;                  
+        double  money;
 
     public:
         // costruttore della classe per inizializzare l'attributo 'money'

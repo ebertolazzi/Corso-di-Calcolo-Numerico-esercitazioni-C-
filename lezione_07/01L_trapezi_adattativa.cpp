@@ -1,5 +1,5 @@
 /* --------------------------------------------------------------------------------- *\
-    CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2022/23)                  Alice Plebe
+    CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2023/24)                  Alice Plebe
 
     Integrazione adattativa metodo dei trapezi
 \* --------------------------------------------------------------------------------- */
@@ -7,7 +7,7 @@
 #include <iostream>
 #include <fstream>
 #include <cmath>
- 
+
 using namespace std;
 
 #define         ANIM        1           // genera plot 1=animato o 0=statico

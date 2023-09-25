@@ -1,5 +1,5 @@
 /* --------------------------------------------------------------------------------- *\
-    CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2022/23)                  Alice Plebe
+    CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2023/24)                  Alice Plebe
 
     Array
 \* --------------------------------------------------------------------------------- */
@@ -26,7 +26,7 @@ int main() {
     */
 
     // 'c' non e` stato inizializzato
-    // il compilatore avra` assegnato dei valori random oppure 0 
+    // il compilatore avra` assegnato dei valori random oppure 0
     cout << "Numero misterioso: " << c[ 4 ] << endl;
 
     for ( int i = 0; i < 10; ++i ) {
@@ -46,7 +46,7 @@ int main() {
     // inoltre, dato che non si vuole modificare gli elementi di 'c', i riferimenti possono essere delle costanti
     /*
     for ( const int &val : c ) {
-        cout << val << " ";             
+        cout << val << " ";
     }
     cout << endl;
     */

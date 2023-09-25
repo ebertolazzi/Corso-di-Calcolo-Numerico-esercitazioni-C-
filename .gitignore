@@ -1,10 +1,17 @@
+*
+!*/
+!*.*
+
 .DS_Store
 cnum_examples/bin
 cnum_examples/build
 
 *.dSYM
 *.o
+*.exe
 */bin
+test
+.vscode
 
 *.gif
 *.pdf

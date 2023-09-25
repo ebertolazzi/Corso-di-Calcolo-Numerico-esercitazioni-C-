@@ -1,5 +1,5 @@
 /* --------------------------------------------------------------------------------- *\
-    CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2022/23)                  Alice Plebe
+    CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2023/24)                  Alice Plebe
 
     Manipolare matrici e vettori con Eigen
 \* --------------------------------------------------------------------------------- */
@@ -54,7 +54,7 @@ int main() {
 	cout << B.col( 1 ) << endl;
 	cout << endl << "B.topLeftCorner( 2, 2 ):" << endl;
 	cout << B.topLeftCorner( 2, 2 ) << endl;
-	
+
 	// questo e` il modo piu` generale, preleva un qualunque blocco contiguo
 	cout << endl << "Central block of B:" << endl;
 	cout << B.block( 1, 1, 2, 2 ) << endl;

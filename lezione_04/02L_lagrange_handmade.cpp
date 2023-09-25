@@ -35,7 +35,7 @@ Lagrange_interpolation( VectorXd const & x, VectorXd const & y ) {
       << " devono essere uguali\n";
     exit(0);
   }
-  return Lagrange_interpolation( x.data(), y.data(), nx );
+  return cnum::Lagrange_interpolation( x.data(), y.data(), nx );
 }
 
 /*-------------------------------------------------------------------------------------

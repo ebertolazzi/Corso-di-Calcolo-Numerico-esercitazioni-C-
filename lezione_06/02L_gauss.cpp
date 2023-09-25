@@ -1,12 +1,12 @@
 /* --------------------------------------------------------------------------------- *\
-    CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2022/23)                  Alice Plebe
+    CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2023/24)                  Alice Plebe
 
     Integrazione metodo di Gauss
 \*-----------------------------------------------------------------------------------*/
 
 #include <iostream>
 #include <cmath>
- 
+
 using namespace std;
 
 
@@ -35,7 +35,7 @@ float gauss( float ( *f )( float x ), float a, float b, int n ) {
 	float	m	= ( b - a ) / 2;	// serve per normalizzare l'intervallo
 	float	s	= 0;
 	float	z;
-	
+
 	for( int i = 0; i < n; i++ ) {
 		if ( n == 3 ) {
 			z	= a + m * ( GAUSSX3[ i ] + 1 );

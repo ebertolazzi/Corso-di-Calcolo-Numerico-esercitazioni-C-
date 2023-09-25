@@ -1,5 +1,5 @@
 /* --------------------------------------------------------------------------------- *\
-    CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2022/23)                  Alice Plebe
+    CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2023/24)                  Alice Plebe
 
     Puntatori e funzioni
 \* --------------------------------------------------------------------------------- */
@@ -21,14 +21,14 @@ void incr2( int &n ) {
 // funzione per scambiare due valori
 void swap1( int &n1, int &n2 ) {
     int tmp = n1;
-    n1      = n2;     
+    n1      = n2;
     n2      = tmp;
 }
 
 // funzione per scambiare due valori usando puntatori
 void swap2( int *n1, int *n2 ) {
     int tmp = *n1;
-    *n1     = *n2;     
+    *n1     = *n2;
     *n2     = tmp;
 }
 

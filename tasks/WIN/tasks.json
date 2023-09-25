@@ -1,0 +1,142 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "BUILD",
+            "command": "g++",
+            "args": [
+                "-I${fileDirname}/../cnum_examples/include",
+                "-I${fileDirname}/../cnum_examples/eigen3",
+                "${file}",
+                "${fileDirname}/../cnum_examples/src/*.cpp",
+                "-g",
+                "-pedantic",
+                "-Wall",
+                "-Wextra",
+                "-Wcast-align",
+                "-Wcast-qual",
+                "-Wctor-dtor-privacy",
+                "-Wdisabled-optimization",
+                "-Wformat=2",
+                "-Winit-self",
+                "-Wlogical-op",
+                "-Wmissing-include-dirs",
+                "-Wnoexcept",
+                "-Wold-style-cast",
+                "-Woverloaded-virtual",
+                "-Wredundant-decls",
+                "-Wshadow",
+                "-Wsign-conversion",
+                "-Wsign-promo",
+                "-Wstrict-null-sentinel",
+                "-Wstrict-overflow=5",
+                "-Wswitch-default",
+                "-Wundef",
+                "-std=c++14"
+            ],
+            "options": {
+                "cwd": "${relativeFileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "echo": false,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": false
+            }
+        },
+        {
+            "type": "shell",
+            "label": "RUN",
+            "command": "./a.exe",
+            "options": {
+                "cwd": "${relativeFileDirname}"
+            },
+            "presentation": {
+                "echo": false,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": false
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "STARTPROMPT",
+            "command": "echo ============= BUILD START ==============\"",
+            "presentation": {
+                "echo": false,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": false
+            }
+        },
+        {
+            "type": "shell",
+            "label": "ENDPROMPT",
+            "command": "echo  ============== BUILD END ===============\"",
+            "presentation": {
+                "echo": false,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": false
+            }
+        },
+        {
+            "type": "shell",
+            "label": "RUNPROMPT",
+            "command": "echo ============ PROGRAM START =============\"",
+            "presentation": {
+                "echo": false,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": false
+            }
+        },
+        {
+            "type": "shell",
+            "label": "BUILD and RUN",
+            "dependsOn": [
+                "STARTPROMPT",
+                "BUILD",
+                "ENDPROMPT",
+                "RUNPROMPT",
+                "RUN"
+            ],
+            "dependsOrder": "sequence",
+            "command": "echo  ============= PROGRAM END ==============\"",
+            "presentation": {
+                "echo": false,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": false
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "echo",
+            "type": "shell",
+            "command": "echo \"${fileDirname}\""
+        }
+    ],
+    "version": "2.0.0"
+}

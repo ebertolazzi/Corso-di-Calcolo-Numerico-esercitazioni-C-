@@ -1,5 +1,5 @@
 /* --------------------------------------------------------------------------------- *\
-  CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2022/23)                  Alice Plebe
+  CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2023/24)                  Alice Plebe
 
     Zeri di funzione - metodo delle Secanti con plot
 
@@ -8,14 +8,14 @@
     dove x_n e` il valore approssimato dello zero della funzione al passo n
     dell'iterazione.
 
-    Ha il vantaggio di non richiedere la derivata della f() ma occorrono 
+    Ha il vantaggio di non richiedere la derivata della f() ma occorrono
     first e second guess.
 \* --------------------------------------------------------------------------------- */
 
 #include <iostream>
 #include <fstream>
 #include <cmath>
- 
+
 using namespace std;
 
 const int   MAX_ITER = 20;
@@ -91,7 +91,7 @@ float do_secant( float x0, float x1, float ( *f )( float x ) ) {
   ostr.precision( PREC ); // imposta la precisione
 
   result  = secant( x0, x1, f, ostr );
-  
+
   ostr.close();
 
   return result;

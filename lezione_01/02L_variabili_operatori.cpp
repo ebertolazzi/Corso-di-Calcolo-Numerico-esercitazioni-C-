@@ -1,5 +1,5 @@
 /* --------------------------------------------------------------------------------- *\
-    CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2022/23)                  Alice Plebe
+    CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2023/24)                  Alice Plebe
 
     Variabili, data type, e operatori
 \* --------------------------------------------------------------------------------- */
@@ -15,7 +15,7 @@ int main() {
     bool    d       = false;                        // valore vero o falso
     char    e       = '?';                          // singolo carattere
 
-    unsigned int    aa    = 128;                    // numero intero positivo 
+    unsigned int    aa    = 128;                    // numero intero positivo
     const float     PI      = 3.14159;              // variabile il cui valore non puo` essere modificato
     /*
     PI      = 17;   // questo causerebbe un errore

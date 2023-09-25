@@ -1,5 +1,5 @@
 /* --------------------------------------------------------------------------------- *\
-    CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2022/23)                  Alice Plebe
+    CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2023/24)                  Alice Plebe
 
     Esempio: serie di Fibonacci con costrutti for e while
 \* --------------------------------------------------------------------------------- */
@@ -29,7 +29,7 @@ int main() {
 
         term_s  = term_1 + term_2;  // aggiorna i valori dei termini correnti
         term_1  = term_2;
-        term_2  = term_s; 
+        term_2  = term_s;
     }
     cout << endl;
 

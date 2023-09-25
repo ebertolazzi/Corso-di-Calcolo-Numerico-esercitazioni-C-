@@ -1,11 +1,12 @@
 /* --------------------------------------------------------------------------------- *\
-    CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2022/23)                  Alice Plebe
+    CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2023/24)                  Alice Plebe
 
     Definire matrici e vettori con Eigen
 \* --------------------------------------------------------------------------------- */
 
 #include <iostream>
 #include <Eigen/Dense>
+//#include "../cnum_examples/eigen3/Eigen/Dense"
 
 using namespace std;
 using namespace Eigen;

@@ -1,5 +1,5 @@
 /* --------------------------------------------------------------------------------- *\
-    CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2022/23)                  Alice Plebe
+    CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2023/24)                  Alice Plebe
 
     Integrazione metodo dei trapezi e metodo di Simpson
 	(con intervalli irregolari)
@@ -8,7 +8,7 @@
 #include <iostream>
 #include <cmath>
 #include <Eigen/Dense>
- 
+
 using namespace std;
 using namespace Eigen;
 
@@ -22,7 +22,7 @@ using namespace Eigen;
 float trapezi( VectorXf &x, VectorXf &y ) {
 	float	s	= 0;
 	int		l	= x.size();
-	
+
 	for( int i=1; i<l; i++ ) {
 		s	+= ( x[ i ] - x[ i - 1 ] ) * ( y[ i ] + y[ i - 1 ] );
 	}
@@ -34,7 +34,7 @@ float trapezi( VectorXf &x, VectorXf &y ) {
 	formula di Simpson
 		I	= \sum_{i=1}^{n/2} h_i ( y_{2i-2} + 4 y_{2i-1} +y_{2i} )
 			dove:
-		h_i	= ( x_{2i} - x_{2i-2} ) / 6 
+		h_i	= ( x_{2i} - x_{2i-2} ) / 6
 
 		x:	vettore di valori X
 		y:	vettore di valori f(X)
@@ -43,7 +43,7 @@ float simpson( VectorXf &x, VectorXf &y ) {
 	float	s	= 0;
 	float	h	= 0;
 	int	n	= x.size() / 2;
-	
+
 	for( int i = 1; i < n; i++ ) {
 		h	= ( x[ 2 * i ] - x[ 2 * i - 2 ] );
 		s	+= h * ( y[ 2 * i - 2 ] + 4 * y[ 2 * i - 1 ] + y[ 2 * i ] );

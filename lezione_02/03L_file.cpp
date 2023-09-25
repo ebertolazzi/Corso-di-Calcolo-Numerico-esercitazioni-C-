@@ -1,5 +1,5 @@
 /* --------------------------------------------------------------------------------- *\
-    CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2022/23)                  Alice Plebe
+    CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2023/24)                  Alice Plebe
 
     Scrittura su file
 \* --------------------------------------------------------------------------------- */
@@ -25,7 +25,7 @@ int main() {
     fo << "sine of n2 = " << sin( n2 ) << endl;
     fo << endl;
     fo << fixed << setprecision( 2 );       // imposta la precisione a 2 cifre decimali
-    
+
     fo << "sine of n2 = " << sin( n2 ) << endl;
     fo << "n3 = " << n3 << endl;
 

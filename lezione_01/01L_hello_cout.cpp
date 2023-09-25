@@ -1,5 +1,5 @@
 /* --------------------------------------------------------------------------------- *\
-    CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2022/23)                  Alice Plebe
+    CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2023/24)                  Alice Plebe
 
     Primo programma "Hello World"
 \* --------------------------------------------------------------------------------- */
@@ -14,7 +14,7 @@ int main() {
     std::cout << "Hello there geeks!" << std::endl;
     // oltre alla sintassi '::' e` possibile indicare il namespace esplicitamente (VEDI main SOTTO)
 
-    // al termine del main, il programma restituisce 0 per indicare 
+    // al termine del main, il programma restituisce 0 per indicare
     // al sistema operativo che l'esecuzione e` terminata correttamente
     return 0;
 }

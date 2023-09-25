@@ -1,5 +1,5 @@
 /* --------------------------------------------------------------------------------- *\
-    CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2022/23)                  Alice Plebe
+    CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2023/24)                  Alice Plebe
 
     Controllo del flusso di esecuzione - Condizionali
 \* --------------------------------------------------------------------------------- */
@@ -45,7 +45,7 @@ int main() {
 
 
     // ===== SWITCH =====
-    // si preferisce usare lo switch quando bisogna scegliere cosa eseguire tra un insieme di alternative 
+    // si preferisce usare lo switch quando bisogna scegliere cosa eseguire tra un insieme di alternative
 
     char    o;
     cout << "Scegli tra A, B, o C: ";   // riceve un char da command line

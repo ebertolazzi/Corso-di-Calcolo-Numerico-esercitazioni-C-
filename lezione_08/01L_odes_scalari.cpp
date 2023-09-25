@@ -1,5 +1,5 @@
 /* --------------------------------------------------------------------------------- *\
-  CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2022/23)                 Davide Stocco
+  CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2023/24)                 Davide Stocco
 
   Integrazione di ODEs saclari (metodo di Eulero, Midpoint e Heun)
 \* --------------------------------------------------------------------------------- */

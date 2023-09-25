@@ -1,5 +1,5 @@
 /* --------------------------------------------------------------------------------- *\
-    CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2022/23)                Davide Stocco
+    CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2023/24)                Davide Stocco
 
     Inclusione della libreria cnum
 \* --------------------------------------------------------------------------------- */
@@ -27,6 +27,6 @@ main() {
   //   "-o",
   //   "${fileDirname}/bin/${fileBasenameNoExtension}"
   // ],
-  
+
   return 0;
 }

@@ -1,5 +1,5 @@
 /* --------------------------------------------------------------------------------- *\
-    CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2022/23)                  Alice Plebe
+    CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2023/24)                  Alice Plebe
 
     Scrivere dati per gnuplot
 \* --------------------------------------------------------------------------------- */
@@ -21,7 +21,7 @@ int main() {
     string      head        = "# --------------------------\n";
     head                   += "# data generated for gnuplot\n";
     head                   += "# --------------------------\n";
-    
+
     // due file su cui scrivere
     string      fname1      = "output1.txt";
     string      fname2      = "output2.txt";

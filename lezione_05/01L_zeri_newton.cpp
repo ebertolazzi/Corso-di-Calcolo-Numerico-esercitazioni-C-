@@ -1,9 +1,9 @@
 /* --------------------------------------------------------------------------------- *\
-  CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2022/23)                  Alice Plebe
+  CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2023/24)                  Alice Plebe
 
     Zeri di funzione - metodo di Newton
 
-    Gli zeri di una funzione sono valori x tali che f( x ) = 0  
+    Gli zeri di una funzione sono valori x tali che f( x ) = 0
     Il metodo di Newton usa la formula iterativa
       x_{n+1} = x_n - f( x_n ) / f'( x_n )
     dove x_n e` il valore approssimato dello zero della funzione al passo n
@@ -18,7 +18,7 @@
 
 #include <iostream>
 #include <cmath>
- 
+
 using namespace std;
 
 const int   MAX_ITER = 20;

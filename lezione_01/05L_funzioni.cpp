@@ -1,5 +1,5 @@
 /* --------------------------------------------------------------------------------- *\
-    CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2022/23)                  Alice Plebe
+    CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2023/24)                  Alice Plebe
 
     Funzioni e ricorsione
 \* --------------------------------------------------------------------------------- */
@@ -59,8 +59,8 @@ int main() {
     chenum( numerello );
 
     // chiama la funzione passando gli argomenti e assegnando il risultato ad una variabile
-    double  prod    = moltip( 0.5, 5 ); 
-    double  rd      = radice( 64 ); 
+    double  prod    = moltip( 0.5, 5 );
+    double  rd      = radice( 64 );
 
     int numerino;
     cout << endl << "Scrivi un numero non negativo: ";

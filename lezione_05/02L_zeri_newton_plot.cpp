@@ -1,5 +1,5 @@
 /* --------------------------------------------------------------------------------- *\
-  CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2022/23)                  Alice Plebe
+  CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2023/24)                  Alice Plebe
 
     Zeri di funzione - metodo di Newton con plot
 \* --------------------------------------------------------------------------------- */
@@ -7,7 +7,7 @@
 #include <iostream>
 #include <fstream>
 #include <cmath>
- 
+
 using namespace std;
 
 const int   N        = 10;
@@ -113,7 +113,7 @@ float do_newton( float x0, float ( *f )( float x ), float ( *d )( float x ) ) {
   ostr.precision( PREC ); // imposta la precisione
 
   result = newton( x0, f, d, ostr );
-  
+
   ostr.close();
 
   return result;
