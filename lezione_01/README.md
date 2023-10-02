@@ -5,4 +5,3 @@
 - conditional statements, loop
 - funzioni
 - puntatori
-- array, stringhe
