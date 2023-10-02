@@ -11,7 +11,8 @@
                 "${file}",
                 "'${fileDirname}'/../cnum_examples/src/*.cpp",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-std=c++14"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
