@@ -6,5 +6,3 @@
 - Array e stringhe
 - Classi e oggetti
 - Template
-- I/O da file
-- Introduzione a gnuplot
