@@ -32,7 +32,7 @@ int main() {
     for ( int i = 0; i < 10; ++i ) {
         c[ i ]  = i * ( i + 1 );        // assegna valori ad ogni elemento dell'array
     }
-    cout << "Numero non piu` misterioso: " << c[ 4 ] << endl;   // c[ 4 ] = 3 * 4
+    cout << "Numero non piu` misterioso: " << c[ 4 ] << endl;   // c[ 4 ] = 4 * 5
 
     // questo tipo di loop chiamato "ranged for" si usa specificatamente con gli array e i vettori
     // ---> NOTA: il ranged for e` disponibile con lo standard C++11 <---
