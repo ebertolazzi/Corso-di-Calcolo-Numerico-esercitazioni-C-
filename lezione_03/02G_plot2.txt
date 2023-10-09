@@ -1,0 +1,7 @@
+# gnuplot script
+
+set terminal pdf size 8, 5 font "Helvetica,16"
+set output "output2.pdf"
+
+plot    "output2.txt" using 1:2 title "Y" with linespoints pointtype 3, \
+        "output2.txt" using 1:3 title "Z" with linespoints pointtype 8
