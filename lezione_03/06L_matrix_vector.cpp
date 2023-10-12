@@ -59,5 +59,5 @@ int main() {
 	cout << endl << "Central block of B:" << endl;
 	cout << B.block( 1, 1, 2, 2 ) << endl;
 
-    return 0;
+  return 0;
 }

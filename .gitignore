@@ -16,3 +16,5 @@ test
 *.gif
 *.pdf
 *.txt
+!03G_plot1.txt
+!03G_plot2.txt
