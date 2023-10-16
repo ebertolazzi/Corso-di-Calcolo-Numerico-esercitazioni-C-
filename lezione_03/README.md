@@ -1,4 +1,4 @@
-# Lezione 03 (AP: 17/10/2022 - AP: 18/10/2022)
+# Lezione 03 (DS: 09/10/2023 - ST: 12/10/2023)
 
 - I/O da file
 - Introduzione a gnuplot
