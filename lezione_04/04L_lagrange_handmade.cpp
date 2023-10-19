@@ -75,7 +75,7 @@ main() {
   x << 0, 1;
   y << 1, 2;
 
-  Poly p = cnum::Lagrange_interpolation(x,y);
+  Poly p = Lagrange_interpolation(x,y);
   std::cout << p << '\n';
 
   // Test 2 - Lagrange_interpolation
@@ -85,7 +85,7 @@ main() {
   x << 0, 1, 2, 3;
   y << 0, 1, 4, 9;
 
-  p = cnum::Lagrange_interpolation(x,y);
+  p = Lagrange_interpolation(x,y);
   std::cout << p << '\n';
 
   return 0;
