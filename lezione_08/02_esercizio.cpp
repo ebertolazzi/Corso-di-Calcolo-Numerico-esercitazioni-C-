@@ -11,11 +11,12 @@
 
 // (3)
 void block_matrix_multiplication(
-  Eigen::MatrixXi &A,
-  Eigen::MatrixXi &Q,
-  Eigen::MatrixXi &B
+  Eigen::MatrixXi const & A,
+  Eigen::MatrixXi const & Q,
+  Eigen::MatrixXi       & B
 )
 {
+  B.resize(A.rows(), A.cols());
   for (int i = 0; i < A.rows(); i += Q.rows())
   {
     for (int j = 0; j < A.cols(); j += Q.cols())
@@ -39,7 +40,7 @@ int main()
   std::cout << "Q = \n" << Q << std::endl;
 
   // (3)
-  Eigen::MatrixXi B = Eigen::MatrixXi::Zero(2 * n, 2 * m);
+  Eigen::MatrixXi B;
   block_matrix_multiplication(A, Q, B);
   std::cout << "B = \n" << B << std::endl;
 
