@@ -1,7 +1,7 @@
 /* --------------------------------------------------------------------------------- *\
   CALCOLO NUMERICO E PROGRAMMAZIONE C++ (AA 2023/24) Davide Stocco & Riccardo Bertollo
 
-  Integrazione di ODEs saclari (metodo di Eulero, Midpoint e Heun)
+  Integrazione di ODEs vettoriali (metodo di Eulero, Midpoint e Heun)
 \* --------------------------------------------------------------------------------- */
 
 #include <iostream>
